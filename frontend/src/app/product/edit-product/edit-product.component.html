@@ -1,0 +1,24 @@
+<div class="addItemForm">
+    <h2>Add Book</h2>
+    <span class="close_icon" (click)="close()"> <mat-icon>close</mat-icon></span>
+        <br>
+        <p>
+            <mat-form-field appearance="standard">
+                <mat-label>Product</mat-label>
+                <input matInput placeholder="Product" [(ngModel)]="this.data.productName">
+            </mat-form-field>
+        </p>
+        <p>
+            <mat-form-field appearance="standard">
+                <mat-label>Quantity</mat-label>
+                <input matInput placeholder="Quantity" type="number" [(ngModel)]="this.data.quantity">
+            </mat-form-field>
+        </p>
+        <p>
+            <mat-form-field appearance="standard">
+                <mat-label>Price of a Product</mat-label>
+                <input matInput placeholder="Product Price" type="number" [(ngModel)]="this.data.price">
+            </mat-form-field>
+        </p>
+        <button mat-raised-button color="primary" (click) = "editProduct()">Edit a Product <mat-icon>add</mat-icon></button>
+</div>
